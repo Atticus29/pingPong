@@ -42,6 +42,9 @@ var changeValuesInIndecesDivisibleByXtoY = function(x, y, numArray){
 
 // Front End
 $(function(){
+  $("#usrInput").click(function(){
+    $("#usrInput").val("");
+  });
   $("#submitForm").submit(function(){
     event.preventDefault();
     $("#hiddenResultList").empty();
