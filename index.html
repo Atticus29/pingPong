@@ -15,20 +15,39 @@
   <div class="container">
     <div class="row" id="row1">
       <div class="jumbotron">
-        <h1>Ping-Pong</h1>
+        <h1 id="header">Ping-Pong</h1>
       </div>
     </div>
     <div class="row" id="row2">
-      <form id="submitForm" class="form-horizontal">
-        <div class="form-group">
-          <label for="">Please enter a positive integer and click Play</label><br>
-          <input type="text" value="e.g., 18" id="usrInput"><br>
-          <button type="submit" class="btn" id="submitBtn">Play</button>
+      <div class="col-md-3" id="left-col">
+        <h1>About Ping Pong</h1>
+        <h2>Created by</h2>
+        <h3>Mark Fisher</h3>
+        <h2>GitHub Username/URL</h2>
+        <a href="www.github.com/Atticus29">Atticus29</a>
+        <h2>Level 2 Test for:</h2>
+        <h3>javaScript</h3>
+      </div>
+      <div class="col-md-9" id="main-cols">
+        <h1>Let's Play!</h1>
+        <h2>Rules:</h2>
+        <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+        <ol>
+          <li>Numbers divisible by 3 beocme "ping"</li>
+          <li>Number divisilbe by 5 become "pong"</li>
+          <li>Number divisible by 3 and 5 become "ping-pong"</li>
+        </ol>
+        <form id="submitForm" class="form-horizontal">
+          <div class="form-group">
+            <label for="">Enter your number here</label>
+            <input type="text" value="e.g., 18" id="usrInput">
+            <button type="submit" class="btn" id="submitBtn">Ping Pong!</button>
+          </div>
+        </form>
+        <div class="hiddenResults">
+          <ul id="hiddenResultList">
+          </ul>
         </div>
-      </form>
-      <div class="hiddenResults">
-        <ul id="hiddenResultList">
-        </ul>
       </div>
     </div>
   </div>

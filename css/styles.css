@@ -4,7 +4,7 @@
 .hiddenResults{
   display: none;
 }
-h1{
+#header{
   text-align: center;
 }
 .jumbotron{
@@ -13,32 +13,54 @@ h1{
   /*padding-right: 100%;*/
   width: 100%;
 }
-.container{
+#left-col{
+  background-color: #80c28e;
+  text-align: left;
+  /*font-size: 70%;*/
+}
+#left-col h1{
+  color: black;
+}
+#left-col h2{
+  color: #f7e0af;
+}
+#left-col h3{
+  color: white;
+}
+
+#main-cols{
+  padding-left: 5%;
+  /*background-color: red;*/
+}
+/*.container{
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
   height: 100%;
-}
+}*/
 #row1{
-  width=100%;
+  /*width=100%;*/
 }
 #row2{
   margin-left: 2%;
 }
-.form-group{
+body{
+  background-color: #e6e6e6;
+}
+/*.form-group{
   margin-left: 2%;
   margin-right: 2%;
-}
-html{
+}*/
+/*html{
   margin: 0;
   padding: 0;
 }
 body{
   background-color: #e6e6e6;
-  border: 0;
-  margin: 0;
-  padding: 0;
+  /*border: 0;*/
+  /*margin: 0;*/
+  /*padding: 0;*/
   /*opacity:0.8;*/
   /*background-color:#ccc;*/
   /*position:fixed;
@@ -47,4 +69,4 @@ body{
   top:0px;
   left:0px;
   z-index:1000;*/
-}
+/*}*/
