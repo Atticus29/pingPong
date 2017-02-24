@@ -4,9 +4,6 @@
 .hiddenResults{
   display: none;
 }
-/*#header{
-  text-align: center;
-}*/
 .jumbotron{
   /*background-color: #f7e0af;*/
   background-color: white;
@@ -49,19 +46,40 @@
   flex-wrap: wrap;
   width: 100%;
   margin-left: 0;
+  margin-bottom: 0.5%;
 }
 .row > [class*='col-'] {
   display: flex;
   flex-direction: column;
 }
-#main-cols{
-  /*margin-left: 1%;*/
+#subrow1{
+  padding-left: 5%;
+  opacity: 0.7;
+  background-color: black;
+  color: white;
+  height: auto;
+}
+#subrow2{
+  padding-left: 5%;
+  opacity: 0.7;
+  background-color: black;
+  color: white;
+  height: auto;
+}
+#subrow3{
+  padding-left: 5%;
+  opacity: 0.7;
+  background-color: black;
+  color: white;
+  height: auto;
+}
+/*#main-cols{
   padding-left: 5%;
   opacity: 0.5;
   background-color: black;
   color: white;
   height: auto;
-}
+}*/
 #usrInput{
   color: black;
 }
