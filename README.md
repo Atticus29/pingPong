@@ -17,14 +17,19 @@ A user should be able to enter a new number and see new results over and over ag
 
 |Behavior|Input|Output|
 |:---:|:---:|:---:|
-|Website takes input from the user and alerts the user if that input is not a positive integer|"-3.14"|`alert("Please enter a positive integer")|
-|Back end logic creates an array of integers from 1 to the inputted number|15|`var numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]`|
+|Website takes input from the user and alerts the user if that input is not a positive integer|"-3.14"|entry stored as text in scripts.js|
+|Website  alerts the user if that input is not a positive integer|"-3.14"|`alert("Please enter a positive integer")`|
+|Back end logic creates an array of integers from 1 to the inputted number|15| numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]|
 |Back end logic has a function to check whether each number in the array is divisible by some number n, and, if so, replaces that number with some string, str|`changeValuesDivisibleByXtoY(13,"replacement",numbers)`|[1,2,3, 4,5,6,7,8,9,10,11,12,"replacement",14,15]|
 |changeValuesDivisibleByXtoY function replaces all values in the array that are divisible by 3 to "ping"|`changeValuesDivisibleByXtoY(3,"ping",numbers)`| arrayAfterReplacingThrees = [1,2,"ping", 4,5,"ping",7,8,"ping",10,11,"ping",13,14,"ping"]|
 |changeValuesDivisibleByXtoY also replaces all values in the array that are divisible by 5 to "pong"|`changeValuesDivisibleByXtoY(5,"pong",arrayAfterReplacingThrees)`|arrayAfterReplacingFivesAndThrees = [1,2,"ping", 4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"pong"]|
 |changeValuesDivisibleByXtoY also replaces all values in the the array that are divisible by 15 to "ping-pong"|changeValuesDivisibleByXtoY(15,"ping-pong",arrayAfterReplacingFivesAndThrees)|finalArray = [1,2,"ping", 4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"ping-pong"]|
 |The transformed array is returned to the display page of the website upon click of the "Play" button|User clicks play|User sees the resulting numbers and strings|
 |User can enter new number and hit play again and expect to see *only* the most recent results|Resulting numbers already displayed. User enters new number and clicks play|Only the resulting numbers and strings from the most recent click are displayed to the user|
+|Layout has sleek banner-sytle title|||
+|Layout has sleek skinny left column with details about the game and the author|||
+|Layout has sleek right-hand content section with rules, the form, and the output|||
+
 
 ## Setup/Installation Requirements
 
