@@ -49,7 +49,22 @@ $(function(){
     var usrStr = $("#usrInput").val();
     var output = processInput(usrStr);
     output.forEach(function(element){
-      $("#hiddenResultList").append("<li>" + element + "</li>")
+      $("#hiddenResultList").append("<li class=" +element+ ">" + element + "</li>")
+      // if(element == "ping"){
+      //   $("." + element).append("<img src='img/ball.jpg' class='special'>");
+      // }
     });
+    $(".ping").append("<img src='img/ball.jpg' class='ping-special'>");
+    $(".ping-special").addClass("animated rollIn infinite");
+    $(".pong").append("<img src='img/ball.jpg' class='pong-special'>");
+    $(".pong-special").addClass("animated rollOut infinite");
+    $(".ping-pong").append("<img src='img/ball.jpg' class='ping-pong-specialIn'>");
+    $(".ping-pong").append("<img src='img/ball.jpg' class='ping-pong-specialOut'>");
+    $(".ping-pong-specialIn").addClass("animated rollIn infinite");
+    $(".ping-pong-specialOut").addClass("animated rollOut infinite");
+  });
+  $("#submitBtn").click(function(){
+    // console.log($("#submitBtn").last());
+    $("#submitBtn").append("<i class='fa fa-spinner fa-spin'></i>");
   });
 });
