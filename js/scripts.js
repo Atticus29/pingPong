@@ -48,8 +48,12 @@ var changeValuesInIndecesDivisibleByXtoY = function(x, y, numArray){
 $(function(){
   $("#submitForm").submit(function(){
     event.preventDefault();
+    $(".hiddenResults").show();
     var usrStr = $("#usrInput").val();
-    processInput(usrStr);
+    var output = processInput(usrStr);
+    output.forEach(function(element){
+      $("#hiddenResultList").append("<li>" + element + "</li>")
+    });
     // console.log(usrStr);
   });
 });
