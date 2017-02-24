@@ -1,45 +1,34 @@
 
-# A bash script tool to help streamline creation of new websites for Epicodus
+# Ping-Pong
 
-#### 10 Feb., 2017, v.1.0.1
+#### 24 Feb., 2017, v.1.0.1
 
 #### By Mark Fisher
 
 ## Description
 
-This script takes three arguments from the user (repo name, parter 1 initials, and partner 2 initials), and uses those variables to create a directory with repo name, create a "css" subdirectory, create an "img" subdirectory, create a styles.css document in the css subdirectory, create an index.html document in the repo folder, initialized the folder as a git repo, executes `git pair` with partner 1's and partner 2's intials, adds everything, makes a first paired commit, and opens the directory in atom.
+A web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
+Numbers divisible by 3 are replaced with "ping"
+Numbers divisible by 5 are replaced with "pong"
+Numbers divisible by 15 are replaced with "ping-pong"
+A user should be able to enter a new number and see new results over and over again.
 
 ### Specifications
 
 |Behavior|Input|Output|
 |:---:|:---:|:---:|
-|Get input text from the user and save as a string variable in front end|"evil User123!!!?"|`var usrInput = "evil Usersz123!!!?"`|
-||||
-||||
-||||
-||||
-||||
-||||
+|Website takes input from the user and alerts the user if that input is not a positive integer|"-3.14"|`alert("Please enter a positive integer")|
+|Back end logic creates an array of integers from 1 to the inputted number|15|`var numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]`|
+|Back end logic has a function to check whether each number in the array is divisible by some number n, and, if so, replaces that number with some string, str|`changeValuesDivisibleByXtoY(13,"replacement",numbers)`|[1,2,3, 4,5,6,7,8,9,10,11,12,"replacement",14,15]|
+|changeValuesDivisibleByXtoY function replaces all values in the array that are divisible by 3 to "ping"|`changeValuesDivisibleByXtoY(3,"ping",numbers)`| arrayAfterReplacingThrees = [1,2,"ping", 4,5,"ping",7,8,"ping",10,11,"ping",13,14,"ping"]|
+|changeValuesDivisibleByXtoY also replaces all values in the array that are divisible by 5 to "pong"|`changeValuesDivisibleByXtoY(5,"pong",arrayAfterReplacingThrees)`|arrayAfterReplacingFivesAndThrees = [1,2,"ping", 4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"pong"]|
+|changeValuesDivisibleByXtoY also replaces all values in the the array that are divisible by 15 to "ping-pong"|changeValuesDivisibleByXtoY(15,"ping-pong",arrayAfterReplacingFivesAndThrees)|finalArray = [1,2,"ping", 4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"ping-pong"]|
+|The transformed array is returned to the display page of the website upon click of the "Play" button|User clicks play|User sees the resulting numbers and strings|
+|User can enter new number and hit play again and expect to see *only* the most recent results|Resulting numbers already displayed. User enters new number and clicks play|Only the resulting numbers and strings from the most recent click are displayed to the user|
 
 ## Setup/Installation Requirements
 
-### If working in pairs
-* Set up your .pairs document for the day
-* Clone this repo. (to your Desktop)
-* Open terminal
-* Navigate to the websiteRepoSetup directory: `cd ~/Desktop/websiteRepoSetup`. **This step is necessary because template files from websiteRepoSetup will need to be copied.**
-* Type `./websiteRepoSetup.sh [yourRepoName] [partner1Initials] [partner2Initials]`
-* Enjoy
-
-### If working alone
-* Clone this repo. (to your Desktop)
-* Open terminal
-* Navigate to the websiteRepoSetup directory: `cd ~/Desktop/websiteRepoSetup`. **This step is necessary because template files from websiteRepoSetup will need to be copied.**
-* Type `./websiteRepoSetupIndivid.sh [yourRepoName] ["Your first and last name in quotes"] [yourEmailAddress]
-* Enjoy
-
-### For the template
-* This repository is meant to be viewed. It can be viewed [here](https://Atticus29.github.io/_repoNameHere_).
+* This repository is meant to be viewed. It can be viewed [here](https://Atticus29.github.io/pingPong).
 
 ### Or if you're feeling bold, you can clone OR download a local instance of the site:
 
@@ -48,11 +37,11 @@ This script takes three arguments from the user (repo name, parter 1 initials, a
     * On a Mac, this would be in the Applications/Utilities directory, and is called, "Terminal"
     * Windows uses a Terminal program as well, but a Terminal with all the capabilities we'll require is not installed by default. Thankfully, we can easily download and install a Terminal program that does fit our needs.
 There are many options available, but we recommend using a terminal program called git bash. You can download this free program at [msysgit.github.io](https://git-for-windows.github.io/).
-  * Clone this track survey repository by typing, `git clone https://github.com/Atticus29/TrackSuggester.git`
+  * Clone this track survey repository by typing, `git clone https://github.com/Atticus29/pingPong.git`
 * Download
-  * Click [here](https://github.com/Atticus29/_repoNameHere_/archive/master.zip) to download the repo
+  * Click [here](https://github.com/Atticus29/pingPong/archive/master.zip) to download the repo
   * Unzip the zipped repository
-* Open the TrackSuggester folder and double-click on index.html.
+* Open the pingPong folder and double-click on index.html.
 * Make your selections and click submit as instructed on the site.
 
 
@@ -66,10 +55,6 @@ Please feel free to contact mark.aaron.fisher@gmail.com for questions
 
 ## Technologies Used
 
-* bash
-* git v. 2.11.1
-
-### Template
 * git v. 2.11.1
 * html5
 * bootstrap v. 3.3.7
@@ -81,7 +66,7 @@ Please feel free to contact mark.aaron.fisher@gmail.com for questions
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2017 Mark Fisher and Clifford Grimmell
+Copyright (c) 2017 Mark Fisher
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
