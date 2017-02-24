@@ -1,7 +1,9 @@
 // Back End
 var processInput = function(str){
   if(validates(str)){
-    // console.log("this happened");
+    num = parseInt(str);
+    var numArray = constructArray(num);
+    console.log("numArray is " + numArray);
   }else{
     alert("Please enter a positive integer");
     return false;
@@ -13,6 +15,13 @@ var validates = function(str){
   } else{
     return false;
   }
+}
+var constructArray = function(num){
+  var numArray = [];
+  for (var i = 0; i<num; i++){
+    numArray.push(i+1);
+  }
+  return numArray;
 }
 
 
