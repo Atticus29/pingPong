@@ -4,69 +4,77 @@
 .hiddenResults{
   display: none;
 }
-#header{
+/*#header{
   text-align: center;
-}
+}*/
 .jumbotron{
-  background-color: #f7e0af;
-  /*padding-left: 100%;*/
-  /*padding-right: 100%;*/
+  /*background-color: #f7e0af;*/
+  background-color: white;
+  color: black;
+  opacity: 0.8;
+  text-align: center;
   width: 100%;
 }
+.col-md-9{
+  margin-left: 5px;
+}
 #left-col{
-  background-color: #80c28e;
+  opacity: 0.5;
+  background-color: black;
+  color: white;
   text-align: left;
-  /*font-size: 70%;*/
+  height: auto;
 }
 #left-col h1{
-  color: black;
+  font-size: 30px;
+  font-size-adjust: 0.5;
 }
 #left-col h2{
-  color: #f7e0af;
+  font-size: 20px;
+  font-size-adjust: 0.5;
 }
 #left-col h3{
-  color: white;
+  font-size: 14px;
+  font-size-adjust: 0.5;
 }
-
-#main-cols{
-  padding-left: 5%;
-  /*background-color: red;*/
+#left-col a{
+  font-size: 14px;
+  font-size-adjust: 0.5;
 }
-/*.container{
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+  width: 100%;
   margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  height: 100%;
-}*/
-#row1{
-  /*width=100%;*/
 }
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+#main-cols{
+  /*margin-left: 1%;*/
+  padding-left: 5%;
+  opacity: 0.5;
+  background-color: black;
+  color: white;
+  height: auto;
+}
+#usrInput{
+  color: black;
+}
+/*#row1{
+}*/
 #row2{
-  margin-left: 2%;
-}
-body{
-  background-color: #e6e6e6;
-}
-/*.form-group{
-  margin-left: 2%;
-  margin-right: 2%;
-}*/
-/*html{
+  width: 108.5%;
   margin: 0;
-  padding: 0;
 }
 body{
-  background-color: #e6e6e6;
-  /*border: 0;*/
-  /*margin: 0;*/
-  /*padding: 0;*/
-  /*opacity:0.8;*/
-  /*background-color:#ccc;*/
-  /*position:fixed;
-  width:100%;
-  height:100%;
-  top:0px;
-  left:0px;
-  z-index:1000;*/
-/*}*/
+  background-image: url("../img/brickBg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Avenir;
+}
