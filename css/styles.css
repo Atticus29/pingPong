@@ -11,10 +11,11 @@
   opacity: 0.8;
   text-align: center;
   width: 100%;
+  margin-left: 1%;
 }
-.col-md-9{
+/*.col-md-9{
   margin-left: 5px;
-}
+}*/
 #left-col{
   opacity: 0.5;
   background-color: black;
@@ -30,11 +31,7 @@
   font-size: 20px;
   font-size-adjust: 0.5;
 }
-#left-col h3{
-  font-size: 14px;
-  font-size-adjust: 0.5;
-}
-#left-col a{
+#left-col h3, #left-col a{
   font-size: 14px;
   font-size-adjust: 0.5;
 }
@@ -46,11 +43,15 @@
   flex-wrap: wrap;
   width: 100%;
   margin-left: 0;
-  margin-bottom: 0.5%;
+  /*margin-bottom: 2%;*/
 }
 .row > [class*='col-'] {
   display: flex;
   flex-direction: column;
+}
+[class^="col-"]{
+  margin-bottom: 2%;
+  margin-left: 1%;
 }
 #subrow1{
   padding-left: 5%;
@@ -65,6 +66,8 @@
   background-color: black;
   color: white;
   height: auto;
+  margin-top: 18px;
+  padding-top: 1%;
 }
 #subrow3{
   padding-left: 5%;
@@ -72,22 +75,17 @@
   background-color: black;
   color: white;
   height: auto;
+  margin-top: 4%
 }
-/*#main-cols{
-  padding-left: 5%;
-  opacity: 0.5;
-  background-color: black;
-  color: white;
-  height: auto;
-}*/
+#main-cols{
+  padding-left: 0;
+}
 #usrInput{
   color: black;
 }
-/*#row1{
-}*/
 #row2{
-  width: 110%;
-  margin: 0;
+  width: 108%;
+  margin-top: 0;
 }
 body{
   background-image: url("../img/brickBg.jpeg");
@@ -114,6 +112,3 @@ body{
 .header-inline h1{
  position: relative;
 }
-/*.container{
-  float: left;
-}*/
