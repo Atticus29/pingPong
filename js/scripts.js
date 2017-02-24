@@ -45,30 +45,30 @@ $(function(){
   $("#usrInput").click(function(){
     $("#usrInput").val("");
   });
-  $("#submitForm").submit(function(){
-    event.preventDefault();
-    $("#hiddenResultList").empty();
-    $(".hiddenResults").show();
-    var usrStr = $("#usrInput").val();
-    var output = processInput(usrStr);
-    output.forEach(function(element){
-      $("#hiddenResultList").append("<li class=" +element+ ">" + element + "</li>")
-      // if(element == "ping"){
-      //   $("." + element).append("<img src='img/ballTransparent.png' class='special'>");
-      // }
-    });
-    $(".ping").append("<img src='img/ballTransparent.png' class='ping-special'>");
-    $(".ping-special").addClass("animated slideInLeft infinite");
-    $(".pong").append("<img src='img/ballTransparent.png' class='pong-special'>");
-    $(".pong-special").addClass("animated slideInRight infinite");
-    $(".ping-pong").append("<img src='img/ballTransparent.png' class='ping-pong-specialIn'>");
-    $(".ping-pong").append("<img src='img/ballTransparent.png' class='ping-pong-specialOut'>");
-    $(".ping-pong-specialIn").addClass("animated slideInLeft infinite");
-    $(".ping-pong-specialOut").addClass("animated slideInRight infinite");
-  });
   $("#submitBtn").click(function(){
-    // console.log($("#submitBtn").last());
     $("#submitBtn i").remove();
     $("#submitBtn").append("<i class='fa fa-spinner fa-spin'></i>");
+  });
+  $("#submitForm").submit(function(){
+    event.preventDefault();
+    setTimeout(function() {
+      $("#hiddenResultList").empty();
+      $(".hiddenResults").show();
+      var usrStr = $("#usrInput").val();
+      var output = processInput(usrStr);
+      output.forEach(function(element){
+        $("#hiddenResultList").append("<li class=" +element+ ">" + element + "</li>")
+      });
+      $(".ping").append("<img src='img/ballTransparent.png' class='ping-special'>");
+      $(".ping-special").addClass("animated slideInLeft infinite");
+      $(".pong").append("<img src='img/ballTransparent.png' class='pong-special'>");
+      $(".pong-special").addClass("animated slideInRight infinite");
+      $(".ping-pong").append("<img src='img/ballTransparent.png' class='ping-pong-specialIn'>");
+      $(".ping-pong").append("<img src='img/ballTransparent.png' class='ping-pong-specialOut'>");
+      $(".ping-pong-specialIn").addClass("animated slideInLeft infinite");
+      $(".ping-pong-specialOut").addClass("animated slideInRight infinite");
+      $("#submitBtn i").remove();
+    },
+    5000);
   });
 });
