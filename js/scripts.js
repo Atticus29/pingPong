@@ -5,11 +5,8 @@ var processInput = function(str){
     num = parseInt(str);
     var numArray = constructArray(num);
     numArray = changeValuesInIndecesDivisibleByXtoY(3, "ping", numArray);
-    // console.log("numArray is " + numArray);
     numArray = changeValuesInIndecesDivisibleByXtoY(5, "pong", numArray);
-    // console.log("numArray is " + numArray);
     numArray = changeValuesInIndecesDivisibleByXtoY(15, "ping-pong", numArray);
-    console.log("numArray is " + numArray);
     returnVal = numArray;
 
   }else{
@@ -37,23 +34,22 @@ var changeValuesInIndecesDivisibleByXtoY = function(x, y, numArray){
     if((i+1)%x===0){
       numArray[i] = y;
     }else{
-      console.log(i+1 + " is not divisible by " + x);
+      // console.log(i+1 + " is not divisible by " + x);
     }
   }
   return numArray;
 }
 
-
 // Front End
 $(function(){
   $("#submitForm").submit(function(){
     event.preventDefault();
+    $("#hiddenResultList").empty();
     $(".hiddenResults").show();
     var usrStr = $("#usrInput").val();
     var output = processInput(usrStr);
     output.forEach(function(element){
       $("#hiddenResultList").append("<li>" + element + "</li>")
     });
-    // console.log(usrStr);
   });
 });
