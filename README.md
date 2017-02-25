@@ -29,7 +29,7 @@ A user should be able to enter a new number and see new results over and over ag
 |10. Layout has sleek banner-sytle title|||
 |11. Layout has sleek skinny left column with details about the game and the author|||
 |12. Layout has sleek right-hand content section with rules, the form, and the output|||
-
+|13. Layout looks good and has bonus functionality|||
 
 ## Setup/Installation Requirements
 

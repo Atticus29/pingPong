@@ -51,9 +51,21 @@ $(function(){
   });
   // $("#subrow2.5").draggable();
   $("#move-me").draggable();
+  $(function() {
+  $("#destination").droppable({
+    drop: function(event, ui) {
+      $("#hiddenResultList").empty();
+      $(".hiddenResults").show();
+      $("#snitch-text").show();
+      $("#snitch").show();
+    }
+  });
+});
   $("#submitForm").submit(function(){
     event.preventDefault();
     setTimeout(function() {
+      $("#snitch").hide();
+      $("#snitch-text").hide();
       $("#hiddenResultList").empty();
       $(".hiddenResults").show();
       var usrStr = $("#usrInput").val();
