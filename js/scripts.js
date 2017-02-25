@@ -49,6 +49,8 @@ $(function(){
     $("#submitBtn i").remove();
     $("#submitBtn").append("<i class='fa fa-spinner fa-spin'></i>");
   });
+  // $("#subrow2.5").draggable();
+  $("#move-me").draggable();
   $("#submitForm").submit(function(){
     event.preventDefault();
     setTimeout(function() {
@@ -69,6 +71,6 @@ $(function(){
       $(".ping-pong-specialOut").addClass("animated slideInRight infinite");
       $("#submitBtn i").remove();
     },
-    5000);
+    3000);
   });
 });

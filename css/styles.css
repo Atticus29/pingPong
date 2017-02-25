@@ -1,9 +1,15 @@
+form{
+  padding-bottom: 2%;
+}
 .btn{
   margin-top: 1%;
 }
 .hiddenResults{
   display: none;
 }
+/*#row1{
+  height: 110%;
+}*/
 .jumbotron{
   /*background-color: #f7e0af;*/
   background-color: white;
@@ -12,6 +18,7 @@
   text-align: center;
   width: 100%;
   margin-left: 1%;
+  padding: 0;
 }
 /*.col-md-9{
   margin-left: 5px;
@@ -60,7 +67,7 @@
   color: white;
   height: auto;
 }
-#subrow2{
+#subrow2, #pingpongDrag{
   padding-left: 5%;
   opacity: 0.7;
   background-color: black;
@@ -68,6 +75,9 @@
   height: auto;
   margin-top: 18px;
   padding-top: 1%;
+}
+#pingpongDrag{
+  padding-bottom: 1%;
 }
 #subrow3{
   padding-left: 5%;
@@ -99,16 +109,19 @@ body{
   width: 50px;
   height: 50px;
 }
-#header-image1{
-  width: 90px;
-  height: 90px;
+#header-image1, #move-me{
+  width: 50px;
+  height: 50px;
   float: left;
 }
 #header-image2{
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   float: right;
 }
 .header-inline h1{
  position: relative;
 }
+/*#subrow2.5{
+
+}*/
