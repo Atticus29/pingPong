@@ -134,3 +134,6 @@ body{
 #snitch-text{
   display: none;
 }
+#tryAgainBtn{
+  margin-left: 2%;
+}

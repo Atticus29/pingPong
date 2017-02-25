@@ -42,6 +42,9 @@ var changeValuesInIndecesDivisibleByXtoY = function(x, y, numArray){
 
 // Front End
 $(function(){
+  $("#tryAgainBtn").click(function(){
+    location.reload();
+  });
   $("#usrInput").click(function(){
     $("#usrInput").val("");
   });
